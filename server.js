@@ -101,6 +101,17 @@ const server = createServer(async (req, res) => {
   }
 });
 
+server.on("error", (error) => {
+  if (error && error.code === "EADDRINUSE") {
+    console.error(
+      `Port ${port} is already in use. Stop the existing process or run with a different PORT, e.g. PORT=3001 npm start.`,
+    );
+    process.exit(1);
+  }
+  console.error("Server failed to start:", error);
+  process.exit(1);
+});
+
 server.listen(port, host, () => {
   console.log(`Server running on http://${host}:${port}`);
 });
