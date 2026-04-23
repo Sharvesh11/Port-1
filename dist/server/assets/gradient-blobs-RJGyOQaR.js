@@ -1,0 +1,50 @@
+import { T as jsxRuntimeExports } from "./worker-entry-CxUBeMkh.js";
+function GradientBlobs() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "aria-hidden": true, className: "pointer-events-none absolute inset-0 overflow-hidden -z-20", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "blur-blob animate-blob",
+        style: {
+          width: 500,
+          height: 500,
+          top: "-10%",
+          left: "-10%",
+          background: "oklch(0.7 0.25 310)"
+        }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "blur-blob animate-blob",
+        style: {
+          width: 600,
+          height: 600,
+          bottom: "-20%",
+          right: "-15%",
+          background: "oklch(0.78 0.18 200)",
+          animationDelay: "-6s"
+        }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "blur-blob animate-blob",
+        style: {
+          width: 400,
+          height: 400,
+          top: "40%",
+          left: "50%",
+          background: "oklch(0.6 0.25 340)",
+          animationDelay: "-12s",
+          opacity: 0.35
+        }
+      }
+    )
+  ] });
+}
+export {
+  GradientBlobs as G
+};
